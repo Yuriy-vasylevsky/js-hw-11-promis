@@ -3,17 +3,19 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://Yuriy-vasylevsky.github.io/js-hw-11-promis ",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /js-hw-11-promis/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm install build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Vasylevsky Yuriy <yuriy.vasylevsky@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
@@ -23,6 +25,11 @@
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
+    "prettier": "2.4.1",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "build": "^0.1.4",
+    "gh-pages": "^3.2.3"
   }
 }
